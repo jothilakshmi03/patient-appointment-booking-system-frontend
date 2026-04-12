@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getAllAppointments, confirmAppointment, cancelAppointment, addDoctor, deleteDoctor, getDoctors } from '../services/api';
+import Navbar from '../components/Navbar';
 
 function AdminDashboard() {
   const [appointments, setAppointments] = useState([]);
@@ -53,6 +54,7 @@ function AdminDashboard() {
 
   return (
     <div style={styles.container}>
+       <Navbar />
       {/* Header */}
       <div style={styles.header}>
         <h1 style={styles.headerTitle}>🏥 Hospital Admin Dashboard</h1>

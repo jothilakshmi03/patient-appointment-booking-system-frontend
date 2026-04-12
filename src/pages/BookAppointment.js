@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { bookAppointment } from '../services/api';
+import Navbar from '../components/Navbar';
+
 
 function BookAppointment() {
   const { doctorId } = useParams();
@@ -24,6 +26,7 @@ function BookAppointment() {
 
   return (
     <div style={styles.container}>
+      <Navbar />
       <div style={styles.card}>
         <h2 style={styles.title}>📅 Book Appointment</h2>
         <input style={styles.input} type="date" onChange={e => setForm({...form, appointmentDate: e.target.value})} />

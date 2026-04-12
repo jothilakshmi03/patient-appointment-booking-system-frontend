@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getAppointmentsByPatient, cancelAppointment } from '../services/api';
+import Navbar from '../components/Navbar';
 
 function MyAppointments() {
   const [appointments, setAppointments] = useState([]);
@@ -22,6 +23,7 @@ function MyAppointments() {
 
   return (
     <div style={styles.container}>
+       <Navbar />
       <h2 style={styles.title}>📋 My Appointments</h2>
       {appointments.length === 0 ? <p style={styles.empty}>No appointments found</p> : (
         appointments.map(apt => (
@@ -42,7 +44,7 @@ function MyAppointments() {
 }
 
 const styles = {
-  container: { minHeight: '100vh', background: 'linear-gradient(135deg, #104696 0%, #520471 100%)', padding: '30px' },
+  container: { minHeight: '100vh', background: 'linear-gradient(135deg, #104696 0%, #520471 100%)', padding: '0' },
   title: { textAlign: 'center', color: '#faf6f6', marginBottom: '30px' },
   card: { background: 'white', padding: '20px', borderRadius: '15px', maxWidth: '500px', margin: '0 auto 20px', boxShadow: '0 5px 20px rgba(0,0,0,0.1)' },
   btn: { padding: '8px 20px', background: 'red', color: 'white', border: 'none', borderRadius: '8px', cursor: 'pointer' },

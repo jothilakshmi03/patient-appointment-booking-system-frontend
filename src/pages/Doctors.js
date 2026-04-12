@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getDoctors } from '../services/api';
+import Navbar from '../components/Navbar';
 
 function Doctors() {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ function Doctors() {
 
   return (
     <div style={styles.container}>
+       <Navbar />
       <h2 style={styles.title}>👨‍⚕️ Available Doctors</h2>
       <div style={styles.grid}>
         {doctors.map(doc => (
