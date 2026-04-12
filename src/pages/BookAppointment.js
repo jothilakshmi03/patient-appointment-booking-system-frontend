@@ -36,12 +36,12 @@ function BookAppointment() {
 }
 
 const styles = {
-  container: { minHeight: '100vh', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', display: 'flex', justifyContent: 'center', alignItems: 'center' },
-  card: { background: 'white', padding: '40px', borderRadius: '20px', width: '350px', boxShadow: '0 20px 60px rgba(0,0,0,0.3)' },
-  title: { textAlign: 'center', marginBottom: '20px', color: '#333' },
+  container: { minHeight: '100vh', background: 'linear-gradient(135deg, #1e359b 0%, #914cd5 100%)', display: 'flex', justifyContent: 'center', alignItems: 'center' },
+  card: { background: 'Black', padding: '40px', borderRadius: '20px', width: '350px', boxShadow: '0 20px 60px rgba(0,0,0,0.3)' },
+  title: { textAlign: 'center', marginBottom: '20px', color: '#f9f4f4' },
   input: { width: '100%', padding: '12px', marginBottom: '15px', borderRadius: '8px', border: '1px solid #ddd', fontSize: '1rem', boxSizing: 'border-box' },
-  btn: { width: '100%', padding: '12px', background: '#667eea', color: 'white', border: 'none', borderRadius: '8px', fontSize: '1rem', cursor: 'pointer', marginBottom: '10px' },
-  btnBack: { width: '100%', padding: '12px', background: 'white', color: '#667eea', border: '2px solid #667eea', borderRadius: '8px', fontSize: '1rem', cursor: 'pointer' }
+  btn: { width: '100%', padding: '12px', background: '#0524ab', color: 'white', border: 'none', borderRadius: '8px', fontSize: '1rem', cursor: 'pointer', marginBottom: '10px' },
+  btnBack: { width: '100%', padding: '12px', background: 'white', color: '#02071a', border: '2px solid #020a2e', borderRadius: '8px', fontSize: '1rem', cursor: 'pointer' }
 };
 
 export default BookAppointment;

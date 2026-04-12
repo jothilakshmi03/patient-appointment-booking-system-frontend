@@ -29,15 +29,15 @@ function Doctors() {
 }
 
 const styles = {
-  container: { minHeight: '100vh', background: '#f0f2f5', padding: '30px' },
-  title: { textAlign: 'center', color: '#333', marginBottom: '30px' },
+  container: { minHeight: '100vh', background: 'linear-gradient(135deg, #0a306a 0%, #520471 100%)', padding: '30px' },
+  title: { textAlign: 'center', color: '#f8f0f0', marginBottom: '30px' },
   grid: { display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' },
-  card: { background: 'white', padding: '25px', borderRadius: '15px', width: '250px', boxShadow: '0 5px 20px rgba(0,0,0,0.1)' },
-  name: { color: '#333', marginBottom: '8px' },
-  spec: { color: '#667eea', marginBottom: '5px' },
-  exp: { color: '#666', marginBottom: '5px' },
-  days: { color: '#666', marginBottom: '15px' },
-  btn: { width: '100%', padding: '10px', background: '#667eea', color: 'white', border: 'none', borderRadius: '8px', cursor: 'pointer' }
+  card: { background: 'Black', padding: '25px', borderRadius: '15px', width: '250px', boxShadow: '0 5px 20px rgba(0,0,0,0.1)' },
+  name: { color: '#faf7f7', marginBottom: '8px' },
+  spec: { color: '#f5f6fd', marginBottom: '5px' },
+  exp: { color: '#f2e0e0', marginBottom: '5px' },
+  days: { color: '#fbf6f6', marginBottom: '15px' },
+  btn: { width: '100%', padding: '10px', background: '#051768', color: 'white', border: 'none', borderRadius: '8px', cursor: 'pointer' }
 };
 
 export default Doctors;

@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Doctors from './pages/Doctors';
 import BookAppointment from './pages/BookAppointment';
 import MyAppointments from './pages/MyAppointments';
+import AdminDashboard from './pages/AdminDashboard';
 
 function App() {
   return (
@@ -17,8 +18,10 @@ function App() {
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/book/:doctorId" element={<BookAppointment />} />
         <Route path="/my-appointments" element={<MyAppointments />} />
+        <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
     </Router>
+    
   );
 }
 

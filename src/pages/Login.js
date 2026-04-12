@@ -20,7 +20,7 @@ function Login() {
   return (
     <div style={styles.container}>
       <div style={styles.card}>
-        <h2 style={styles.title}>🔐 Login</h2>
+        <h2 style={styles.title}>User Login</h2>
         <input style={styles.input} placeholder="Email" onChange={e => setForm({...form, email: e.target.value})} />
         <input style={styles.input} placeholder="Password" type="password" onChange={e => setForm({...form, password: e.target.value})} />
         <button style={styles.btn} onClick={handleLogin}>Login</button>
@@ -31,12 +31,12 @@ function Login() {
 }
 
 const styles = {
-  container: { minHeight: '100vh', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', display: 'flex', justifyContent: 'center', alignItems: 'center' },
-  card: { background: 'white', padding: '40px', borderRadius: '20px', width: '350px', boxShadow: '0 20px 60px rgba(0,0,0,0.3)' },
-  title: { textAlign: 'center', marginBottom: '20px', color: '#333' },
+  container: { minHeight: '100vh', background: 'linear-gradient(135deg, #1b36ac 0%, #aa86cd 100%)', display: 'flex', justifyContent: 'center', alignItems: 'center' },
+  card: { background: 'Black', padding: '40px', borderRadius: '20px', width: '350px', boxShadow: '0 20px 60px rgba(0,0,0,0.3)' },
+  title: { textAlign: 'center', marginBottom: '20px', color: '#eef1eaee' },
   input: { width: '100%', padding: '12px', marginBottom: '15px', borderRadius: '8px', border: '1px solid #ddd', fontSize: '1rem', boxSizing: 'border-box' },
-  btn: { width: '100%', padding: '12px', background: '#667eea', color: 'white', border: 'none', borderRadius: '8px', fontSize: '1rem', cursor: 'pointer' },
-  link: { textAlign: 'center', marginTop: '15px', color: '#667eea', cursor: 'pointer' }
+  btn: { width: '100%', padding: '12px', background: '#0d2385', color: 'white', border: 'none', borderRadius: '8px', fontSize: '1rem', cursor: 'pointer' },
+  link: { textAlign: 'center', marginTop: '15px', color: '#ebedf4', cursor: 'pointer' }
 };
 
 export default Login;
